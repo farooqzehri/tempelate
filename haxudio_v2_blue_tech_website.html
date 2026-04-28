@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAXUDIO — Digital Agency</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,700&family=Barlow+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cur" id="C"></div>
+<div class="cur2" id="C2"></div>
+
+<nav id="nav">
+  <div class="logo" onclick="go('home')">
+    <span class="logo-hx">HAX</span><span class="logo-rest">UDIO</span>
+  </div>
+  <ul class="nav-links">
+    <li><a onclick="go('home')" id="nh" class="active">Home</a></li>
+    <li><a onclick="go('about')" id="na">About</a></li>
+    <li><a onclick="go('services')" id="ns">Services</a></li>
+    <li><a onclick="go('contact')" id="nc">Contact</a></li>
+  </ul>
+  <button class="nav-btn" onclick="go('contact')">Start Project</button>
+</nav>
+
+<!-- ═══════════ HOME ═══════════ -->
+<div class="page active" id="home">
+
+<section class="hero">
+  <div class="h-grid"></div>
+  <div class="h-glow"></div>
+  <div class="h-glow2"></div>
+  <div class="hero-tag">
+    <span class="hero-tag-dot"></span>
+    <span class="hero-tag-text">Digital Agency · Karachi · Est. 2020</span>
+  </div>
+  <h1 class="hero-h1">
+    <span class="ln">We Design</span>
+    <span class="ln accent">The Future</span>
+    <span class="ln outline">Of Digital</span>
+  </h1>
+  <p class="hero-sub">Haxudio builds <strong>world-class websites</strong>, compelling brand identities, and growth-focused digital marketing campaigns — for businesses that refuse to be average.</p>
+  <div class="hero-actions">
+    <button class="btn-solid" onclick="go('contact')">Start a Project</button>
+    <button class="btn-outline" onclick="go('services')">
+      Our Services
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+  <div class="hero-scroll-ind">
+    <div class="scroll-bar"></div>
+    <span class="scroll-txt">Scroll to explore</span>
+  </div>
+  <div class="hero-floating">
+    <div class="hf-card"><div class="hf-num">80+</div><div class="hf-label">Projects Launched</div></div>
+    <div class="hf-card"><div class="hf-num">98%</div><div class="hf-label">Client Retention</div></div>
+    <div class="hf-card"><div class="hf-num">4+</div><div class="hf-label">Years of Craft</div></div>
+  </div>
+</section>
+
+<div class="marquee-bar">
+  <div class="marquee-inner">
+    <span class="marquee-item">Web Development<span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Graphic Design<span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Digital Marketing<span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Brand Strategy<span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">UI / UX Design<span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">SEO &amp; Growth<span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Web Development<span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Graphic Design<span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Digital Marketing<span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">Brand Strategy<span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">UI / UX Design<span class="marquee-dot">◆</span></span>
+    <span class="marquee-item">SEO &amp; Growth<span class="marquee-dot">◆</span></span>
+  </div>
+</div>
+
+<section class="abt-prev rev">
+  <div>
+    <div class="sec-label">About Haxudio</div>
+    <h2 class="abt-h2">Not Just Another Agency. Your Growth Partner.</h2>
+    <p class="abt-p">We're a tight team of engineers, designers, and growth hackers who don't settle for "good enough." Every project we take on gets our full obsession — from concept to launch to scale.</p>
+    <button class="btn-outline" onclick="go('about')">Our Story <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+  </div>
+  <div class="abt-visual">
+    <img class="abt-img proxy" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" alt="Team collaborating" loading="lazy">
+    <div class="abt-overlay"></div>
+    <div class="abt-badge">
+      <div class="ab-stat"><div class="ab-num">80+</div><div class="ab-lbl">Projects</div></div>
+      <div class="ab-stat"><div class="ab-num">4+</div><div class="ab-lbl">Years</div></div>
+      <div class="ab-stat"><div class="ab-num">25+</div><div class="ab-lbl">Clients</div></div>
+      <div class="ab-stat"><div class="ab-num">98%</div><div class="ab-lbl">Retention</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-section rev">
+  <div class="svc-hdr">
+    <div>
+      <div class="sec-label">What We Do</div>
+      <h2 class="abt-h2" style="margin-bottom:0">Services Built to Move the Needle</h2>
+    </div>
+    <p style="font-weight:300;color:var(--text-secondary);font-size:.95rem;line-height:1.7">Three specialties. One obsession: results that actually matter to your bottom line.</p>
+  </div>
+  <div class="svc-grid">
+    <div class="svc-card" onclick="go('services')">
+      <div class="svc-num">01 — Web Dev</div>
+      <div class="svc-icon-box">
+        <svg width="24" height="24" fill="none" stroke="var(--blue)" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5M7 14l2 2-2 2M12 18h4"/></svg>
+      </div>
+      <div class="svc-title">Web Development</div>
+      <p class="svc-desc">Lightning-fast websites and web apps engineered for performance, conversion, and long-term scale.</p>
+      <div class="svc-link">Learn More <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+    </div>
+    <div class="svc-card" onclick="go('services')">
+      <div class="svc-num">02 — Design</div>
+      <div class="svc-icon-box">
+        <svg width="24" height="24" fill="none" stroke="var(--blue)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <div class="svc-title">Graphic Design</div>
+      <p class="svc-desc">Brand identities, visual systems, and assets that make your brand unforgettable in a crowded market.</p>
+      <div class="svc-link">Learn More <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+    </div>
+    <div class="svc-card" onclick="go('services')">
+      <div class="svc-num">03 — Marketing</div>
+      <div class="svc-icon-box">
+        <svg width="24" height="24" fill="none" stroke="var(--blue)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      </div>
+      <div class="svc-title">Digital Marketing</div>
+      <p class="svc-desc">Data-driven campaigns — SEO, paid ads, social — that connect with real audiences and drive revenue.</p>
+      <div class="svc-link">Learn More <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+    </div>
+  </div>
+</section>
+
+<section class="work-teaser rev">
+  <div class="wt-header">
+    <div class="sec-label" style="justify-content:center">Selected Work</div>
+    <h2 class="abt-h2" style="text-align:center">Recent Projects</h2>
+  </div>
+  <div class="wt-grid">
+    <div class="wt-item">
+      <img class="wt-img proxy" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Project 1" loading="lazy">
+      <div class="wt-info"><div class="wt-cat">Web Development</div><div class="wt-name">Nexus Commerce Platform</div></div>
+    </div>
+    <div class="wt-item">
+      <img class="wt-img proxy" src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80" alt="Project 2" loading="lazy">
+      <div class="wt-info"><div class="wt-cat">Brand Identity</div><div class="wt-name">Luminary Co. Rebrand</div></div>
+    </div>
+    <div class="wt-item">
+      <img class="wt-img proxy" src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&q=80" alt="Project 3" loading="lazy">
+      <div class="wt-info"><div class="wt-cat">Digital Marketing</div><div class="wt-name">Spark Ventures Growth</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="test-sec rev">
+  <div class="sec-label">Testimonials</div>
+  <h2 class="abt-h2">Words From Our Clients</h2>
+  <div class="test-grid">
+    <div class="test-card">
+      <div class="test-q">"</div>
+      <p class="test-txt">Haxudio didn't just build us a website — they understood our entire business model and translated it into a digital experience that actually converts. Revenue up 40% in 3 months.</p>
+      <div class="test-aut">
+        <div class="test-av"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Ahmed Khan" loading="lazy"></div>
+        <div><div class="test-name">Ahmed Khan</div><div class="test-role">Founder, Nexus Tech</div></div>
+      </div>
+    </div>
+    <div class="test-card">
+      <div class="test-q">"</div>
+      <p class="test-txt">The rebrand they delivered completely transformed how our market perceives us. Premium, intentional, and perfectly aligned with where we wanted to take the company.</p>
+      <div class="test-aut">
+        <div class="test-av"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sara Farooq" loading="lazy"></div>
+        <div><div class="test-name">Sara Farooq</div><div class="test-role">CMO, Luminary Co.</div></div>
+      </div>
+    </div>
+    <div class="test-card">
+      <div class="test-q">"</div>
+      <p class="test-txt">Their paid ads campaign tripled our qualified leads in under 60 days. What stood out was how much they actually cared about our numbers, not just the deliverables.</p>
+      <div class="test-aut">
+        <div class="test-av"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="Omar Malik" loading="lazy"></div>
+        <div><div class="test-name">Omar Malik</div><div class="test-role">CEO, Spark Ventures</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="f-cta rev">
+  <div class="fcta-glow"></div>
+  <div class="sec-label" style="justify-content:center">Ready?</div>
+  <h2 class="fcta-h">Let's Build<br>Something <span class="bl">Great</span></h2>
+  <p class="fcta-sub">Whether you're launching something new or leveling up what exists — we're ready when you are.</p>
+  <div class="fcta-acts">
+    <button class="btn-solid" onclick="go('contact')">Get in Touch</button>
+    <button class="btn-outline" onclick="go('services')">View Services</button>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-top">
+    <div>
+      <div class="ft-logo-name"><span style="background:linear-gradient(135deg,#1a5fd4,var(--blue-bright));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">HAX</span><span style="color:var(--white)">UDIO</span></div>
+      <p class="ft-desc">A modern digital agency building the web — one exceptional project at a time.</p>
+    </div>
+    <div><div class="ft-col-h">Navigate</div><ul class="ft-ul"><li><a onclick="go('home')">Home</a></li><li><a onclick="go('about')">About</a></li><li><a onclick="go('services')">Services</a></li><li><a onclick="go('contact')">Contact</a></li></ul></div>
+    <div><div class="ft-col-h">Services</div><ul class="ft-ul"><li><a>Web Development</a></li><li><a>Graphic Design</a></li><li><a>Digital Marketing</a></li><li><a>Brand Strategy</a></li></ul></div>
+    <div><div class="ft-col-h">Connect</div><ul class="ft-ul"><li><a>hello@haxudio.com</a></li><li><a>+92 300 000 0000</a></li><li><a>Instagram</a></li><li><a>LinkedIn</a></li></ul></div>
+  </div>
+  <div class="ft-bot"><p class="ft-copy">© 2025 <span>HAXUDIO</span>. All rights reserved.</p><div class="ft-soc"><a>Instagram</a><a>Behance</a><a>LinkedIn</a></div></div>
+</footer>
+</div>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<div class="page" id="about">
+<section class="pg-hero">
+  <div class="pgh-bg"></div>
+  <div class="pg-eyebrow">About Haxudio</div>
+  <h1 class="pg-title">The <em>humans</em><br>behind your<br>digital growth</h1>
+  <p class="pg-sub">A compact team of obsessives who take your digital presence as seriously as you take your business. No bloat, no hand-offs — just dedicated people who give a damn.</p>
+</section>
+
+<section class="story-sec rev">
+  <div>
+    <div class="story-lbl">Our Story</div>
+    <h2 class="story-pull">WE STARTED BECAUSE GREAT BUSINESSES DESERVED BETTER DIGITAL WORK.</h2>
+  </div>
+  <div class="story-body">
+    <p>Back in 2020, two friends — one obsessed with code architecture, one obsessed with design systems — got tired of watching talented businesses get mediocre websites and generic campaigns. So they built something different.</p>
+    <p>Not an agency mill. A studio where every project gets real attention, where "ship it and forget it" is never acceptable, and where your success is genuinely tied to ours.</p>
+    <p>Four years on, we've grown into a full-service team spread across Pakistan. The size has changed. The philosophy hasn't: make things that are genuinely excellent, and everything else follows.</p>
+  </div>
+</section>
+
+<section class="mvv-sec rev">
+  <div class="sec-label">What Drives Us</div>
+  <h2 class="abt-h2">Mission. Vision. Values.</h2>
+  <div class="mvv-grid">
+    <div class="mvv-card"><div class="mvv-n">01</div><div class="mvv-t">Mission</div><p class="mvv-p">To help businesses of every size compete and win online through digital products that are both beautiful and relentlessly built to perform.</p></div>
+    <div class="mvv-card"><div class="mvv-n">02</div><div class="mvv-t">Vision</div><p class="mvv-p">To become the most trusted digital partner for forward-thinking brands in South Asia — known for craft, transparency, and outcomes that matter.</p></div>
+    <div class="mvv-card"><div class="mvv-n">03</div><div class="mvv-t">Values</div><p class="mvv-p">Craft over speed. Honesty over spin. Long-term relationships over quick transactions. We build for the long game because that's how trust is earned.</p></div>
+  </div>
+</section>
+
+<section class="team-sec rev">
+  <div class="sec-label">The Team</div>
+  <h2 class="abt-h2">Meet the People Behind the Work</h2>
+  <div class="team-grid">
+    <div class="tm-card">
+      <img class="tm-img proxy" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Ali Hassan" loading="lazy">
+      <div class="tm-info"><div class="tm-name">Ali Hassan</div><div class="tm-role">Co-Founder & Lead Dev</div></div>
+    </div>
+    <div class="tm-card">
+      <img class="tm-img proxy" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Zara Qureshi" loading="lazy">
+      <div class="tm-info"><div class="tm-name">Zara Qureshi</div><div class="tm-role">Creative Director</div></div>
+    </div>
+    <div class="tm-card">
+      <img class="tm-img proxy" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80" alt="Bilal Raza" loading="lazy">
+      <div class="tm-info"><div class="tm-name">Bilal Raza</div><div class="tm-role">Marketing Strategist</div></div>
+    </div>
+    <div class="tm-card">
+      <img class="tm-img proxy" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" alt="Hina Shah" loading="lazy">
+      <div class="tm-info"><div class="tm-name">Hina Shah</div><div class="tm-role">Project Lead</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="f-cta rev">
+  <div class="fcta-glow"></div>
+  <div class="sec-label" style="justify-content:center">Join Us</div>
+  <h2 class="fcta-h">Ready to Meet<br>Your <span class="bl">New Team?</span></h2>
+  <p class="fcta-sub">We're selective about new projects — because we give every one 100%. Let's see if we're a good fit.</p>
+  <div class="fcta-acts"><button class="btn-solid" onclick="go('contact')">Start a Conversation</button></div>
+</section>
+
+<footer>
+  <div class="ft-top">
+    <div><div class="ft-logo-name"><span style="background:linear-gradient(135deg,#1a5fd4,var(--blue-bright));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">HAX</span><span style="color:var(--white)">UDIO</span></div><p class="ft-desc">A modern digital agency building the web — one exceptional project at a time.</p></div>
+    <div><div class="ft-col-h">Navigate</div><ul class="ft-ul"><li><a onclick="go('home')">Home</a></li><li><a onclick="go('about')">About</a></li><li><a onclick="go('services')">Services</a></li><li><a onclick="go('contact')">Contact</a></li></ul></div>
+    <div><div class="ft-col-h">Services</div><ul class="ft-ul"><li><a>Web Development</a></li><li><a>Graphic Design</a></li><li><a>Digital Marketing</a></li></ul></div>
+    <div><div class="ft-col-h">Connect</div><ul class="ft-ul"><li><a>hello@haxudio.com</a></li><li><a>Instagram</a></li><li><a>LinkedIn</a></li></ul></div>
+  </div>
+  <div class="ft-bot"><p class="ft-copy">© 2025 <span>HAXUDIO</span>. All rights reserved.</p><div class="ft-soc"><a>Instagram</a><a>Behance</a><a>LinkedIn</a></div></div>
+</footer>
+</div>
+
+<!-- ═══════════ SERVICES ═══════════ -->
+<div class="page" id="services">
+<section class="svc-pg-intro">
+  <div class="spi-bg"></div>
+  <div class="spi-layout">
+    <div>
+      <div class="pg-eyebrow">Our Services</div>
+      <h1 class="pg-title">Three Things.<br>Done <em>Exceptionally</em><br>Well.</h1>
+    </div>
+    <p class="pg-sub" style="font-size:1.05rem;margin-top:0">We don't do everything. We do the three things that matter most to your digital success — and we do them better than anyone.</p>
+  </div>
+</section>
+
+<section class="svc-detail rev">
+  <div class="sdl">
+    <div class="sdl-stick">
+      <div class="sd-big-n">01</div>
+      <div class="sd-icon-wrap">
+        <svg width="30" height="30" fill="none" stroke="var(--blue)" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5M7 14l2 2-2 2M12 18h4"/></svg>
+      </div>
+      <h2 class="sd-title">Web Development</h2>
+      <p class="sd-desc">We build websites and web apps that perform as beautifully as they look — from precise landing pages to full-scale custom platforms.</p>
+      <div class="sd-tags"><span class="sd-tag">React</span><span class="sd-tag">Next.js</span><span class="sd-tag">WordPress</span><span class="sd-tag">Shopify</span><span class="sd-tag">Node.js</span></div>
+    </div>
+    <div>
+      <div class="proc-lbl">Our Process</div>
+      <div class="proc-step"><div class="ps-num">01</div><div><div class="ps-title">Discovery & Scoping</div><p class="ps-desc">We start with your business goals, your users, and what a successful launch looks like. No templates — everything is built for your specific context.</p></div></div>
+      <div class="proc-step"><div class="ps-num">02</div><div><div class="ps-title">UX Architecture</div><p class="ps-desc">Before any design work, we map user flows and information architecture. The foundation determines everything that comes after.</p></div></div>
+      <div class="proc-step"><div class="ps-num">03</div><div><div class="ps-title">Design & Prototype</div><p class="ps-desc">High-fidelity designs that look and feel like the live product — reviewed, refined, and approved by you before a single line of code is written.</p></div></div>
+      <div class="proc-step"><div class="ps-num">04</div><div><div class="ps-title">Development & QA</div><p class="ps-desc">Clean, semantic, performance-optimized code. Cross-device testing across 20+ environments before anything goes live.</p></div></div>
+      <div class="proc-step"><div class="ps-num">05</div><div><div class="ps-title">Launch & Ongoing Support</div><p class="ps-desc">A meticulous launch process and post-launch support to make sure everything performs exactly as intended.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-detail rev">
+  <div class="sdl">
+    <div class="sdl-stick">
+      <div class="sd-big-n">02</div>
+      <div class="sd-icon-wrap">
+        <svg width="30" height="30" fill="none" stroke="var(--blue)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <h2 class="sd-title">Graphic Design</h2>
+      <p class="sd-desc">Great brands are built on great design. We create visual identities that make your brand trusted, recognized, and genuinely hard to ignore.</p>
+      <div class="sd-tags"><span class="sd-tag">Brand Identity</span><span class="sd-tag">Logo Design</span><span class="sd-tag">UI/UX</span><span class="sd-tag">Print</span><span class="sd-tag">Social Media</span></div>
+    </div>
+    <div>
+      <div class="proc-lbl">Our Process</div>
+      <div class="proc-step"><div class="ps-num">01</div><div><div class="ps-title">Brand Research & Audit</div><p class="ps-desc">We study your industry, competitors, and target audience to understand what your visual language needs to say and feel.</p></div></div>
+      <div class="proc-step"><div class="ps-num">02</div><div><div class="ps-title">Concept Development</div><p class="ps-desc">Multiple creative directions, each grounded in strategy — not just aesthetics. Design that has a reason behind every choice.</p></div></div>
+      <div class="proc-step"><div class="ps-num">03</div><div><div class="ps-title">Design Execution</div><p class="ps-desc">Every element crafted with intention — typography, color theory, form, proportion, and negative space all working in harmony.</p></div></div>
+      <div class="proc-step"><div class="ps-num">04</div><div><div class="ps-title">Brand Guidelines</div><p class="ps-desc">A comprehensive system guide so your brand stays consistent everywhere it shows up — today and ten years from now.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-detail rev">
+  <div class="sdl">
+    <div class="sdl-stick">
+      <div class="sd-big-n">03</div>
+      <div class="sd-icon-wrap">
+        <svg width="30" height="30" fill="none" stroke="var(--blue)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      </div>
+      <h2 class="sd-title">Digital Marketing</h2>
+      <p class="sd-desc">Traffic, leads, revenue — driven by strategy and data, not gut feel. We run campaigns that reach real people and generate numbers you can build a business on.</p>
+      <div class="sd-tags"><span class="sd-tag">SEO</span><span class="sd-tag">Google Ads</span><span class="sd-tag">Meta Ads</span><span class="sd-tag">Content</span><span class="sd-tag">Analytics</span></div>
+    </div>
+    <div>
+      <div class="proc-lbl">Our Process</div>
+      <div class="proc-step"><div class="ps-num">01</div><div><div class="ps-title">Goal Definition & Audit</div><p class="ps-desc">We audit your current situation, define success with real KPIs, and map the most direct route to get there.</p></div></div>
+      <div class="proc-step"><div class="ps-num">02</div><div><div class="ps-title">Channel Strategy</div><p class="ps-desc">Not every business needs every channel. We select the right ones and build focused strategy around what will actually move the needle for you.</p></div></div>
+      <div class="proc-step"><div class="ps-num">03</div><div><div class="ps-title">Execution & Management</div><p class="ps-desc">Campaigns built and managed by specialists — not account managers passing briefs to juniors. Real people, real ownership.</p></div></div>
+      <div class="proc-step"><div class="ps-num">04</div><div><div class="ps-title">Optimize & Scale</div><p class="ps-desc">Weekly performance reviews, disciplined A/B testing, and smart budget scaling. Every decision is backed by data.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="f-cta rev">
+  <div class="fcta-glow"></div>
+  <div class="sec-label" style="justify-content:center">Next Step</div>
+  <h2 class="fcta-h">Which Service<br>Do You Need <span class="bl">Today?</span></h2>
+  <p class="fcta-sub">Every engagement starts with a free discovery call. No pitch, no pressure — just an honest conversation.</p>
+  <div class="fcta-acts"><button class="btn-solid" onclick="go('contact')">Book a Free Call</button></div>
+</section>
+
+<footer>
+  <div class="ft-top">
+    <div><div class="ft-logo-name"><span style="background:linear-gradient(135deg,#1a5fd4,var(--blue-bright));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">HAX</span><span style="color:var(--white)">UDIO</span></div><p class="ft-desc">A modern digital agency building the web — one exceptional project at a time.</p></div>
+    <div><div class="ft-col-h">Navigate</div><ul class="ft-ul"><li><a onclick="go('home')">Home</a></li><li><a onclick="go('about')">About</a></li><li><a onclick="go('services')">Services</a></li><li><a onclick="go('contact')">Contact</a></li></ul></div>
+    <div><div class="ft-col-h">Services</div><ul class="ft-ul"><li><a>Web Development</a></li><li><a>Graphic Design</a></li><li><a>Digital Marketing</a></li></ul></div>
+    <div><div class="ft-col-h">Connect</div><ul class="ft-ul"><li><a>hello@haxudio.com</a></li><li><a>Instagram</a></li><li><a>LinkedIn</a></li></ul></div>
+  </div>
+  <div class="ft-bot"><p class="ft-copy">© 2025 <span>HAXUDIO</span>. All rights reserved.</p><div class="ft-soc"><a>Instagram</a><a>Behance</a><a>LinkedIn</a></div></div>
+</footer>
+</div>
+
+<!-- ═══════════ CONTACT ═══════════ -->
+<div class="page" id="contact">
+<div class="contact-wrap">
+  <div class="contact-l">
+    <div class="cl-eyeb">Get In Touch</div>
+    <h1 class="cl-h">Let's Build<br>Something<br><span class="bl">Great Together</span></h1>
+    <p class="cl-sub">We're currently taking on new projects. Tell us what you're building and we'll tell you how we can help.</p>
+    <div class="ci-list">
+      <div class="ci-row">
+        <div class="ci-icon"><svg width="20" height="20" fill="none" stroke="var(--blue)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div><div class="ci-lbl">Email</div><div class="ci-val">hello@haxudio.com</div></div>
+      </div>
+      <div class="ci-row">
+        <div class="ci-icon"><svg width="20" height="20" fill="none" stroke="var(--blue)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+        <div><div class="ci-lbl">Phone</div><div class="ci-val">+92 300 000 0000</div></div>
+      </div>
+      <div class="ci-row">
+        <div class="ci-icon"><svg width="20" height="20" fill="none" stroke="var(--blue)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><div class="ci-lbl">Location</div><div class="ci-val">Karachi, Pakistan</div></div>
+      </div>
+      <div class="ci-row">
+        <div class="ci-icon"><svg width="20" height="20" fill="none" stroke="var(--blue)" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div><div class="ci-lbl">Response Time</div><div class="ci-val">Within 24 hours</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-r">
+    <div class="form-title">Send a Message</div>
+    <div class="fg"><label class="fl">Your Name</label><input class="fi" type="text" placeholder="Ali Hassan"></div>
+    <div class="fg"><label class="fl">Email Address</label><input class="fi" type="email" placeholder="ali@yourcompany.com"></div>
+    <div class="fg"><label class="fl">Service Needed</label><input class="fi" type="text" placeholder="Web Development, Branding, Marketing..."></div>
+    <div class="fg"><label class="fl">Project Brief</label><textarea class="fta" placeholder="Tell us what you're building, what problem you're solving, and what success looks like for you..."></textarea></div>
+    <button class="btn-solid f-sub" onclick="submitForm()">Send Message →</button>
+    <p style="margin-top:1rem;font-size:.78rem;color:var(--text-muted)">We reply to every message personally. No auto-replies, no sales scripts.</p>
+  </div>
+</div>
+<footer>
+  <div class="ft-top">
+    <div><div class="ft-logo-name"><span style="background:linear-gradient(135deg,#1a5fd4,var(--blue-bright));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">HAX</span><span style="color:var(--white)">UDIO</span></div><p class="ft-desc">A modern digital agency building the web — one exceptional project at a time.</p></div>
+    <div><div class="ft-col-h">Navigate</div><ul class="ft-ul"><li><a onclick="go('home')">Home</a></li><li><a onclick="go('about')">About</a></li><li><a onclick="go('services')">Services</a></li><li><a onclick="go('contact')">Contact</a></li></ul></div>
+    <div><div class="ft-col-h">Services</div><ul class="ft-ul"><li><a>Web Development</a></li><li><a>Graphic Design</a></li><li><a>Digital Marketing</a></li></ul></div>
+    <div><div class="ft-col-h">Connect</div><ul class="ft-ul"><li><a>hello@haxudio.com</a></li><li><a>Instagram</a></li><li><a>LinkedIn</a></li></ul></div>
+  </div>
+  <div class="ft-bot"><p class="ft-copy">© 2025 <span>HAXUDIO</span>. All rights reserved.</p><div class="ft-soc"><a>Instagram</a><a>Behance</a><a>LinkedIn</a></div></div>
+</footer>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>
